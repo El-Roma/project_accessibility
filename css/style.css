@@ -41,7 +41,7 @@ html {
 .article{
   background-color: #f8f8f8;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
