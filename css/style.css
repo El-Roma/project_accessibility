@@ -4,8 +4,12 @@ html {
   line-height: 1.4;
 }
 
+body{
+  margin: 0;
+}
+
 .header{
-  background-color: #f8f8f8;
+  background-color: #b3d4fc;
   padding: 20px;
   text-align: center;
   align-items: center;
@@ -28,9 +32,10 @@ html {
   height: 80px;
 }
 .article{
-  background-color: #f8f8f8;
+  background-color: #b3d4fc;
   padding: 20px;
   margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,7 +45,7 @@ html {
 }
 footer{
   height: 100px;
-  background-color: #f8f8f8;
+  background-color: #b3d4fc;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -289,4 +294,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
