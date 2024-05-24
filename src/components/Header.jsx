@@ -11,7 +11,7 @@ function Header() {
                 />
                 <h1>Mon Blog de Ski</h1>
             </div>
-            <nav role="navigation">
+            <nav role="navigation" aria-label="Menu principal">
                 <a href="/" className="login-link" tabindex="1">Home</a>
                 <a href="/login" className="login-link" tabindex="2">Connexion</a>
             </nav>
