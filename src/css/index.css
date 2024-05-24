@@ -205,10 +205,78 @@ footer {
 .article a {
   display: block;
   margin-top: 10px;
-  color: #007bff;
+  color: #b3d4fc;
   text-decoration: none;
 }
 
 .article a:hover {
   text-decoration: underline;
 }
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 400px;
+}
+
+table thead tr {
+  background-color: #b3d4fc;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #b3d4fc;
+}
+
+table tfoot tr {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  text-align: right;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.login-link:focus {
+  outline: 2px solid #000;
+}
+

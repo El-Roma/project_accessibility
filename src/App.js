@@ -5,16 +5,18 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Home from './components/Home';
+import ArticlePage from './components/ArticlePage';
 
 function App() {
     return (
         <Router>
             <div>
                 <Header />
-                <main>
+                <main role="main">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/article/:id" element={<ArticlePage />} />
                     </Routes>
                 </main>
                 <Footer />
@@ -22,5 +24,6 @@ function App() {
         </Router>
     );
 }
+
 
 export default App;
