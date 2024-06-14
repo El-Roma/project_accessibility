@@ -2,19 +2,22 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Détail de l'article">
+  <meta name="robots" content="noindex,nofollow">
   <title>Titre de l'article - Mon Blog de Ski</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<header aria-label="haut de page" class="header">
+<header aria-label="Haut de page" class="header">
   <div class="header-left">
-    <img src="../img/ski-sport-logo-vintage-vector-logo-Graphics-22202736-1.webp" alt="Logo de la station de ski Valthorens" class="img-ski"/>
+    <img src="../img/ski-sport-logo-vintage-vector-logo-Graphics-22202736-1.webp" alt="Logo de la station de ski Valthorens" class="img-ski" width="100" height="100">
     <h1>Mon Blog de Ski</h1>
   </div>
-  <nav>
+  <nav aria-label="Navigation principale">
     <ul>
-      <li><a href="component/Login.html" class="login-link">Connexion</a></li>
+      <li><a href="../component/Login.html" class="login-link">Connexion</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +49,8 @@
     </table>
   </article>
 
-  <div class="comments-section">
+  <section class="comments-section" aria-labelledby="comments-title">
+    <h3 id="comments-title">Commentaires</h3>
     <div class="comment">
       <header><strong>Utilisateur1 - 01/01/2024</strong></header>
       <main>Super expérience pour une première fois!</main>
@@ -59,13 +63,13 @@
       <header><strong>Utilisateur3 - 03/01/2024</strong></header>
       <main>Les premières fois sont toujours mémorables, surtout avec des chutes. Bravo!</main>
     </div>
-  </div>
+  </section>
 </main>
 
-<footer>
-  <nav>
+<footer aria-label="Pied de page">
+  <nav aria-label="Navigation secondaire">
     <ul>
-      <li><a href="component/MentionLegals.html">Mentions Légales</a></li>
+      <li><a href="../component/MentionLegals.html">Mentions Légales</a></li>
     </ul>
   </nav>
 </footer>
