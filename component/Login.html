@@ -2,13 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Login - Blog de ski</title>
 </head>
 <body>
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
   <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-    <img class="img-ski" src="../img/ski-sport-logo-vintage-vector-logo-Graphics-22202736-1.webp" alt="station de ski valthorens">
+    <img class="img-ski" src="../img/ski-sport-logo-vintage-vector-logo-Graphics-22202736-1.webp" alt="Logo de la station de ski Val Thorens">
     <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900" id="form-title">Se connecter</h2>
   </div>
 
@@ -25,8 +26,9 @@
         <div class="flex items-center justify-between">
           <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Mot de passe</label>
         </div>
-        <div class="mt-2">
+        <div class="mt-2 relative">
           <input id="password" name="password" type="password" autocomplete="current-password" required aria-required="true" placeholder="Votre mot de passe" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <button type="button" onclick="togglePassword()" aria-label="Afficher ou masquer le mot de passe" class="absolute inset-y-0 right-0 px-3 py-1 text-gray-600">Afficher</button>
         </div>
       </div>
 
@@ -41,5 +43,20 @@
     </form>
   </main>
 </div>
+
+<script>
+  function togglePassword() {
+    var passwordInput = document.getElementById('password');
+    var toggleButton = event.target;
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      toggleButton.textContent = 'Masquer';
+    } else {
+      passwordInput.type = 'password';
+      toggleButton.textContent = 'Afficher';
+    }
+  }
+</script>
+
 </body>
 </html>
