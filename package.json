@@ -1,4 +1,6 @@
 {
+  "name": "project_accessibility",
+  "homepage": "https://El-Roma.github.io/project_accessibility",
   "version": "0.0.1",
   "description": "",
   "private": true,
@@ -7,14 +9,12 @@
   ],
   "license": "",
   "author": "",
-  "homepage": "https://El-Roma.github.io/project_accessibility",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
